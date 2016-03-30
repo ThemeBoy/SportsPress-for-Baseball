@@ -35,6 +35,8 @@ class SportsPress_Baseball {
 		add_action( 'tgmpa_register', array( $this, 'require_core' ) );
 
 		add_filter( 'gettext', array( $this, 'gettext' ), 20, 3 );
+		add_filter( 'sportspress_event_empty_result_string', array( $this, 'event_empty_result_string' ) );
+		add_filter( 'sportspress_event_performance_default_squad_number', array( $this, 'event_performance_default_squad_number' ) );
 
 		// Include required files
 		$this->includes();
@@ -130,10 +132,27 @@ class SportsPress_Baseball {
 				case 'Defense':
 					$translated_text = __( 'Pitching', 'sportspress-for-baseball' );
 					break;
+				case 'Display squad numbers':
+					$translated_text = __( 'Display batting order', 'sportspress-for-baseball' );
+					break;
 			}
 		}
 		
 		return $translated_text;
+	}
+
+	/** 
+	 * Empty result string.
+	 */
+	public function event_empty_result_string() {
+		return 'x';
+	}
+
+	/** 
+	 * Default squad number.
+	 */
+	public function event_performance_default_squad_number() {
+		return '';
 	}
 }
 
