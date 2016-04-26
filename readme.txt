@@ -80,6 +80,8 @@ Yes, CSV importers are included with the core SportsPress plugin. Go to Tools > 
 
 = 0.9 =
 * Tweak - Display baseball ball icon in place of SportsPress logo.
+* Tweak - Display squad numbers as batting order in event results.
+* Tweak - Fill empty cells in event results with "x".
 * Tweak - Display events as games.
 * Tweak - Display venues as fields.
 * Tweak - Display substitutes as bench.
