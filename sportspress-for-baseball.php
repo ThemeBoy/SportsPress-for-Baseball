@@ -122,6 +122,15 @@ class SportsPress_Baseball {
 				case 'View all events':
 					$translated_text = __( 'View all games', 'sportspress-for-baseball' );
 					break;
+				case 'Venues':
+					$translated_text = __( 'Fields', 'sportspress-for-soccer' );
+					break;
+				case 'Venue':
+					$translated_text = __( 'Field', 'sportspress-for-soccer' );
+					break;
+				case 'Edit Venue':
+					$translated_text = __( 'Edit Field', 'sportspress-for-soccer' );
+					break;
 				case 'Substitute':
 				case 'Substituted':
 					$translated_text = __( 'Bench', 'sportspress-for-baseball' );
