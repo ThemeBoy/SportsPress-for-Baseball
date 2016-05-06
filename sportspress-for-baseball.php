@@ -5,7 +5,7 @@
  * Description: A suite of baseball features for SportsPress.
  * Author: ThemeBoy
  * Author URI: http://themeboy.com/
- * Version: 0.9
+ * Version: 0.9.1
  *
  * Text Domain: sportspress-for-baseball
  * Domain Path: /languages/
@@ -20,7 +20,7 @@ if ( ! class_exists( 'SportsPress_Baseball' ) ) :
  * Main SportsPress Baseball Class
  *
  * @class SportsPress_Baseball
- * @version	0.9
+ * @version	0.9.1
  */
 class SportsPress_Baseball {
 
@@ -37,6 +37,7 @@ class SportsPress_Baseball {
 		add_filter( 'gettext', array( $this, 'gettext' ), 20, 3 );
 		add_filter( 'sportspress_event_empty_result_string', array( $this, 'event_empty_result_string' ) );
 		add_filter( 'sportspress_event_performance_default_squad_number', array( $this, 'event_performance_default_squad_number' ) );
+		add_filter( 'sportspress_event_performance_show_numbers', array( $this, 'event_performance_show_numbers' ), 20, 2 );
 
 		// Include required files
 		$this->includes();
@@ -47,7 +48,7 @@ class SportsPress_Baseball {
 	*/
 	private function define_constants() {
 		if ( !defined( 'SP_BASEBALL_VERSION' ) )
-			define( 'SP_BASEBALL_VERSION', '0.9' );
+			define( 'SP_BASEBALL_VERSION', '0.9.1' );
 
 		if ( !defined( 'SP_BASEBALL_URL' ) )
 			define( 'SP_BASEBALL_URL', plugin_dir_url( __FILE__ ) );
@@ -162,6 +163,13 @@ class SportsPress_Baseball {
 	 */
 	public function event_performance_default_squad_number() {
 		return '';
+	}
+
+	/** 
+	 * Hide batting order for pitchers.
+	 */
+	public function event_performance_show_numbers( $show_numbers, $section = -1 ) {
+		return $show_numbers && 1 !== $section;
 	}
 }
 
