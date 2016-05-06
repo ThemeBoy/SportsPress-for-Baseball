@@ -3,8 +3,8 @@ Contributors: ThemeBoy, brianmiyaji, aylaview
 Tags: sport, sports, players, statistics, stats, data, games, fixtures, results, standings, baseball, baseball team
 Donate link: http://tboy.co/donate
 Requires at least: 3.8
-Tested up to: 4.4
-Stable tag: 0.9
+Tested up to: 4.5
+Stable tag: 0.9.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,7 +12,7 @@ SportsPress for Baseball is an extension for SportsPress, an all-in-one sports d
 
 == Description ==
 
-= Create a Professional Baseball Club Website =
+= Create a Professional Baseball Team Website =
 Transform your WordPress blog into a fully configurable website for your baseball team. Features a suite of baseball tools including baseball admin branding and own goals reporting.
 
 SportsPress for Baseball is currently in Beta. Please feel free to share your feedback with us so we can continue to develop and improve SportsPress for Baseball!
@@ -27,9 +27,10 @@ SportsPress for Baseball is currently in Beta. Please feel free to share your fe
 Looking for more advanced baseball functionality? Upgrade to [SportsPress Pro](http://tboy.co/pro) to get access to more advanced features for your baseball team website.
 
 = SportsPress Themes for Teams =
-* [Football Club](http://tboy.co/fc)
-* [Premier](http://tboy.co/premier)
+* [Marquee](http://tboy.co/marquee)
 * [Emblem](http://tboy.co/emblem)
+* [Premier](http://tboy.co/premier)
+* [Football Club](http://tboy.co/fc)
 
 = Please Rate, Vote, and Enjoy! =
 Your feedback is much appreciated and makes all the difference in improving SportsPress for Baseball.
@@ -38,7 +39,7 @@ Your feedback is much appreciated and makes all the difference in improving Spor
 
 = Minimum Requirements =
 * WordPress 3.8 or greater
-* [SportsPress](https://wordpress.org/plugins/sportspress/) 1.9 or greater
+* [SportsPress](https://wordpress.org/plugins/sportspress/) 2.0 or greater
 * PHP version 5.2.4 or greater
 * MySQL version 5.0 or greater
 
@@ -65,6 +66,9 @@ If on the off-chance you do encounter issues with the event/team/player/staff pa
 == Screenshots ==
 
 1. The Edit Game screen.
+2. Game results with home team ahead at bottom of the 9th.
+3. Box score with separate batting and pitching statistics.
+4. Player statistics in a pitcher's profile page.
 
 == Frequently Asked Questions ==
 
@@ -77,6 +81,9 @@ Yes; SportsPress for Baseball will work with any theme, but may require some sty
 Yes, CSV importers are included with the core SportsPress plugin. Go to Tools > Import and choose from one of the SportsPress CSV importers.
 
 == Changelog ==
+
+= 0.9.1 =
+* Tweak - Hide batting order for pitchers.
 
 = 0.9 =
 * Tweak - Display baseball ball icon in place of SportsPress logo.
