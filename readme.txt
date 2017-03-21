@@ -3,8 +3,8 @@ Contributors: ThemeBoy, brianmiyaji, aylaview
 Tags: sport, sports, players, statistics, stats, data, games, fixtures, results, standings, baseball, baseball team
 Donate link: http://tboy.co/donate
 Requires at least: 3.8
-Tested up to: 4.5
-Stable tag: 0.9.1
+Tested up to: 4.7
+Stable tag: 0.9.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -27,10 +27,11 @@ SportsPress for Baseball is currently in Beta. Please feel free to share your fe
 Looking for more advanced baseball functionality? Upgrade to [SportsPress Pro](http://tboy.co/pro) to get access to more advanced features for your baseball team website.
 
 = SportsPress Themes for Teams =
-* [Marquee](http://tboy.co/marquee)
-* [Emblem](http://tboy.co/emblem)
-* [Premier](http://tboy.co/premier)
+* [Courtside](http://tboy.co/courtside)
 * [Football Club](http://tboy.co/fc)
+* [Premier](http://tboy.co/premier)
+* [Emblem](http://tboy.co/emblem)
+* [Marquee](http://tboy.co/marquee)
 
 = Please Rate, Vote, and Enjoy! =
 Your feedback is much appreciated and makes all the difference in improving SportsPress for Baseball.
@@ -81,6 +82,9 @@ Yes; SportsPress for Baseball will work with any theme, but may require some sty
 Yes, CSV importers are included with the core SportsPress plugin. Go to Tools > Import and choose from one of the SportsPress CSV importers.
 
 == Changelog ==
+
+= 0.9.2 =
+* Tweak - Update TGMPA library.
 
 = 0.9.1 =
 * Tweak - Hide batting order for pitchers.
