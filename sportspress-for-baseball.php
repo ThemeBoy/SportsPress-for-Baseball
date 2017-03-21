@@ -39,6 +39,9 @@ class SportsPress_Baseball {
 		add_filter( 'sportspress_event_performance_default_squad_number', array( $this, 'event_performance_default_squad_number' ) );
 		add_filter( 'sportspress_event_performance_show_numbers', array( $this, 'event_performance_show_numbers' ), 20, 2 );
 
+		// Define default sport
+		add_filter( 'sportspress_default_sport', array( $this, 'default_sport' ) );
+
 		// Include required files
 		$this->includes();
 	}
@@ -80,6 +83,7 @@ class SportsPress_Baseball {
 				'name'        => 'SportsPress',
 				'slug'        => 'sportspress',
 				'required'    => true,
+				'version'     => '2.3',
 				'is_callable' => array( 'SportsPress', 'instance' ),
 			),
 		);
@@ -170,6 +174,13 @@ class SportsPress_Baseball {
 	 */
 	public function event_performance_show_numbers( $show_numbers, $section = -1 ) {
 		return $show_numbers && 1 !== $section;
+	}
+
+	/**
+	 * Define default sport.
+	*/
+	public function default_sport() {
+		return 'baseball';
 	}
 }
 
