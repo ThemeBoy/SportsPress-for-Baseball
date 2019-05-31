@@ -3,8 +3,8 @@ Contributors: ThemeBoy, brianmiyaji, aylaview
 Tags: sport, sports, players, statistics, stats, data, games, fixtures, results, standings, baseball, baseball team
 Donate link: http://tboy.co/donate
 Requires at least: 3.8
-Tested up to: 4.7
-Stable tag: 0.9.2
+Tested up to: 5.2
+Stable tag: 1.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -19,6 +19,7 @@ SportsPress for Baseball is currently in Beta. Please feel free to share your fe
 
 = Features =
 * Baseball Admin Branding to replace the [SportsPress](https://wordpress.org/plugins/sportspress/) icon with a baseball
+* Display Accurate IP Statistics with Partial Innings using Decimal Notation
 * Schedule Games with Pitching & Batting Stats
 * Baseball Field Information & Maps
 
@@ -82,6 +83,9 @@ Yes; SportsPress for Baseball will work with any theme, but may require some sty
 Yes, CSV importers are included with the core SportsPress plugin. Go to Tools > Import and choose from one of the SportsPress CSV importers.
 
 == Changelog ==
+
+= 1.0 =
+* Feature - Add configuration setting to treat decimals as partial innings in player performance for IP.
 
 = 0.9.2 =
 * Feature - Apply default sport setting for smoother installation.
