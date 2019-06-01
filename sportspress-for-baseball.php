@@ -109,7 +109,7 @@ class SportsPress_Baseball {
 				'name'        => 'SportsPress',
 				'slug'        => 'sportspress',
 				'required'    => true,
-				'version'     => '2.6.16',
+				'version'     => '2.6.17',
 				'is_callable' => array( 'SportsPress', 'instance' ),
 			),
 		);
