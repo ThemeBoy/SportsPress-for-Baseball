@@ -56,6 +56,7 @@ class SportsPress_Baseball {
 		add_action( 'sportspress_before_player_statistics_loop', array( $this, 'get_partial_inning_keys' ) );
 		add_filter( 'sportspress_player_performance_add_value', array( $this, 'convert_partial_innings_notation_to_real_value' ), 10, 2 );
 		add_filter( 'sportspress_player_performance_table_placeholder', array( $this, 'convert_real_value_to_partial_innings_notation' ), 10, 3 );
+		add_filter( 'sportspress_player_performance_table_placeholders', array( $this, 'convert_real_values_to_partial_innings_notation' ) );
 
 		// Include required files
 		$this->includes();
@@ -292,6 +293,17 @@ class SportsPress_Baseball {
 		}
 
 		return $value;
+	}
+
+	/**
+	 * Convert real values to partial innings notation.
+	*/
+	public function convert_real_values_to_partial_innings_notation( $values = array() ) {
+		foreach ( $values as $key => $value ) {
+			$values[ $key ] = $this->convert_real_value_to_partial_innings_notation( $value, $key );
+		}
+
+		return $values;
 	}
 
 	/**
