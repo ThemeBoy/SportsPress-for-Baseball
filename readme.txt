@@ -84,6 +84,9 @@ Yes, CSV importers are included with the core SportsPress plugin. Go to Tools > 
 
 == Changelog ==
 
+= 1.0.1 =
+* Tweak - Recalculate partial innings in career totals.
+
 = 1.0 =
 * Feature - Add configuration setting to treat decimals as partial innings in player performance for IP.
 

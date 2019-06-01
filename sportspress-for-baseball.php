@@ -5,7 +5,7 @@
  * Description: A suite of baseball features for SportsPress.
  * Author: ThemeBoy
  * Author URI: http://themeboy.com/
- * Version: 1.0
+ * Version: 1.0.1
  *
  * Text Domain: sportspress-for-baseball
  * Domain Path: /languages/
@@ -20,7 +20,7 @@ if ( ! class_exists( 'SportsPress_Baseball' ) ) :
  * Main SportsPress Baseball Class
  *
  * @class SportsPress_Baseball
- * @version	1.0
+ * @version	1.0.1
  */
 class SportsPress_Baseball {
 
@@ -77,7 +77,7 @@ class SportsPress_Baseball {
 	*/
 	private function define_constants() {
 		if ( !defined( 'SP_BASEBALL_VERSION' ) )
-			define( 'SP_BASEBALL_VERSION', '1.0' );
+			define( 'SP_BASEBALL_VERSION', '1.0.1' );
 
 		if ( !defined( 'SP_BASEBALL_URL' ) )
 			define( 'SP_BASEBALL_URL', plugin_dir_url( __FILE__ ) );
