@@ -253,6 +253,9 @@ class SportsPress_Baseball {
 			$columns = get_posts( $args );
 		}
 
+		// Initialize partial inning keys reference array.
+		$this->partial_inning_keys = array();
+
 		foreach ( $columns as $column ) {
 			$partial_innings = get_post_meta( $column->ID, 'sp_partial_innings', true );
 			if ( $partial_innings ) {
