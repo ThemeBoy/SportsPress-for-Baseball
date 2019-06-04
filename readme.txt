@@ -4,7 +4,7 @@ Tags: sport, sports, players, statistics, stats, data, games, fixtures, results,
 Donate link: http://tboy.co/donate
 Requires at least: 3.8
 Tested up to: 5.2
-Stable tag: 1.0
+Stable tag: 1.0.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -83,6 +83,9 @@ Yes; SportsPress for Baseball will work with any theme, but may require some sty
 Yes, CSV importers are included with the core SportsPress plugin. Go to Tools > Import and choose from one of the SportsPress CSV importers.
 
 == Changelog ==
+
+= 1.0.2 =
+* Fix - Error when no performance variables are configured for decimal notation.
 
 = 1.0.1 =
 * Tweak - Recalculate partial innings in career totals.
